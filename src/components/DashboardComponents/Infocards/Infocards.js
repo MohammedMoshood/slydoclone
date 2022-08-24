@@ -17,8 +17,8 @@ const Infocards = ({dark , heading , paragraph , btnText,bgImage , rightImage}) 
             </InfoBtn>
 
         </InfoDiv>
-        <InfoImageDiv  >
-              <img src={rightImage} />
+        <InfoImageDiv style={{backgroundImage:`url(${rightImage})`}}  >
+            
         </InfoImageDiv>
     </WelcomeCard>
     </>

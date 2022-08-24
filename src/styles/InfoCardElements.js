@@ -21,7 +21,6 @@ height: 100%;
 export const InfoDiv = styled.div`
 display: grid;
 width: 45%;
-
 height: 100%;
 justify-content: center;
 align-items: center;
@@ -29,6 +28,8 @@ align-items: center;
 `
 export const InfoImageDiv = styled.div`
 width: 60%;
+background:no-repeat;
+background-position-x: 50%;
 height: 100%;
 text-align: center;
 `
