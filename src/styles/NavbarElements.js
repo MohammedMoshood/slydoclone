@@ -38,7 +38,7 @@ export const MenuIcon = styled.div`
   height: 24px;
   padding-bottom: 30px;
 
-  @media screen and (min-width: 921px) {
+  @media screen and (min-width:1200px) {
     visibility: hidden;
   }
 

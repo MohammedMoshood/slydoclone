@@ -14,8 +14,8 @@ const MenuItem = ({ item, isHovering , toggle }) => {
   
 
   const [subSidebar, setSubSidebar] = useState(false);
-
   const showSubSidebar = () => setSubSidebar(!subSidebar);
+  
   const ArrowStyle = styled.div`
     margin-left: 10px;
     transform: translateX(80px) translateY(8px);

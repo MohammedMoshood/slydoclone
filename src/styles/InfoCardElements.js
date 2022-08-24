@@ -3,24 +3,17 @@ import styled from  "styled-components"
 export const WelcomeCard = styled.div`
 width: 90%;
 height: 97%;
-background:#e3deff ;
-margin: 10px 0  40px 40px;
+background:#e3deff no-repeat;
+background-size: 100%;
+margin: 0 auto;
 align-items: center;
 justify-content: center;
 display: flex;
 border-radius: 10px;
 border: #beb4d9 solid 2px;
-@media screen and (min-width: 921px) {
-    width: 43%;
+@media screen and (min-width: 1540px) {
+width: 43%;
 height: 100%;
-background:#e3deff ;
-margin: 0 40px;
-align-items: center;
-justify-content: center;
-display: flex;
-border-radius: 10px;
-border: #beb4d9 solid 2px;
-
 }
 
 `
@@ -37,6 +30,7 @@ align-items: center;
 export const InfoImageDiv = styled.div`
 width: 60%;
 height: 100%;
+text-align: center;
 `
 
 export const InfoH2 = styled.h2`
@@ -80,6 +74,8 @@ transition: 0.2s ease-in-out all;
 
 
 
-export const LineChart = styled.div`
-
+export const LineDiv = styled.div`
+     height:90% ; 
+      width:90% ;
+      margin:20px auto;
 `

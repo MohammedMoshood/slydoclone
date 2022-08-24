@@ -19,5 +19,4 @@ export const cardData2 = {
     "",
   btnText: `Learn More`,
   bgImage:`${cardbg2 }`,
-  rightImage : `${null}`
 };

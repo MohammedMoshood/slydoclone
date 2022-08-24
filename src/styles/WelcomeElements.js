@@ -7,7 +7,7 @@ justify-content: center;
 align-items: center;
 margin: 0 auto;
 background:#e3deff ;
-@media screen and (min-width: 921px ) {
+@media screen and (min-width: 1540px ) {
     height: 100vh;
 }
 `
@@ -38,13 +38,11 @@ display:grid ;
 justify-content: center;
 align-items: center;
 height: 800px;
-
-@media screen and (min-width: 921px) {
+width: 100%;
+margin: 0 auto;
+@media screen and (min-width:1540px) {
 display:flex ;
-justify-content: center;
-align-items: center;
 height: 40vh;
-
 }
 
 `
@@ -54,7 +52,7 @@ height: 40vh;
 
 export const ChartContainer = styled.div`
 height: 40vh ;
-width: 90%;
+width: 93%;
 border-radius: 10px;
 margin:30px auto;
 justify-content: center;

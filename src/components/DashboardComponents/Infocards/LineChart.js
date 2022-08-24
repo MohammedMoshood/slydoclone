@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Line } from "react-chartjs-2";
+import { LineDiv } from "../../../styles/InfoCardElements";
 import {
   Chart as ChartJS,
   Title,
@@ -20,6 +21,8 @@ ChartJS.register(
   PointElement
 );
 const LineChart = () => {
+
+
   const [data, setData] = useState({
     labels: ["red", "blue", "pink", "yellow", "indigo", "milo", "coco"],
     datasets: [
@@ -42,10 +45,12 @@ const LineChart = () => {
       
     ],
   });
+
+
   return (
-    <div style={{ height:"90%" , width:"90%" ,margin:"20px auto" }}>
+    <LineDiv>
       <Line data={data} options={{maintainAspectRatio:false}} />
-    </div>
+    </LineDiv>
   );
 };
 

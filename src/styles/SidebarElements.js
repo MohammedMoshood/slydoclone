@@ -12,13 +12,14 @@ import { Link as LinkRouter } from "react-router-dom";
 export const MainDiv = styled.main`
   padding-left: 0;
 
-  @media screen and (min-width: 921px) {
-    padding-left: ${({ isOpen }) => (isOpen ? "17%" : "0px")};
+  @media screen and (min-width:1200px) {
+    padding-left: ${({ isOpen }) => (isOpen ? "350px" : "70px")};
     transition: all ease-in-out 0.3s;
   }
 `;
 
 
+//Sidebar
 
 
 export const SideOverlay = styled.div`
@@ -26,7 +27,7 @@ export const SideOverlay = styled.div`
   background: rgba(0, 0, 0, 0.5);
   height: 100%;
   cursor: pointer;
-  @media screen and (min-width: 921px) {
+  @media screen and (min-width:1200px) {
     display: none;
   }
 `;
@@ -41,7 +42,7 @@ export const OverallSide = styled.div`
   transition: 0.4s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   left: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
-  @media screen and (min-width: 921px) {
+  @media screen and (min-width:1200px) {
       width: ${({isHovering})=>(isHovering ? "17%" : "4%")} ;
       opacity: 100%;
       transition: 0.3s  ;
@@ -62,7 +63,7 @@ export const SidebarContainer = styled.aside`
   border-right: #beb4d9 solid 0.1rem;
   transition: 0.4s ease-in-out;
 
-  @media screen and (min-width: 921px) {
+  @media screen and (min-width:1200px) {
     width: ${({ isHovering }) => (isHovering ? "350px" : "70px")};
     transition: 0.3s  ;
     left: 0;
@@ -78,14 +79,14 @@ export const Slydo = styled.div`
   display: flex;
   align-items: center;
   margin-left: 20px;
-  @media screen and (min-width: 921px) {
+  @media screen and (min-width:1200px) {
     
   }
 `;
 
 export const SlydoText = styled.h3`
 margin-left: 10px;
-@media screen and (min-width: 921px) {
+@media screen and (min-width:1200px) {
   transition: 50ms ease-in-out all;
   visibility: ${({isHovering})=>(isHovering?"visible":"hidden")};
   }
@@ -94,7 +95,7 @@ margin-left: 10px;
 export const NavigationText = styled.h5`
   letter-spacing: 4px;
   margin-left: 22px;
-  @media screen and (min-width: 921px) {
+  @media screen and (min-width:1200px) {
     letter-spacing: 4px;
     margin-left: 15px;
     transition: 50ms ease-in-out all;
@@ -109,7 +110,7 @@ export const Icon = styled.div`
   font-size: 2rem;
   cursor: pointer;
   outline: none;
-  @media screen and (min-width: 921px) {
+  @media screen and (min-width:1200px) {
     transition: 50ms ease-in-out all;
   visibility: ${({isHovering})=>(isHovering?"visible":"hidden")};
   }
@@ -132,7 +133,7 @@ export const SideBarWrapper = styled.div`
   display: grid;
   justify-self: center;
   align-items: flex-start;
-  @media screen and (min-width: 921px) {
+  @media screen and (min-width:1200px) {
     width: ${({isHovering})=>(isHovering?"98%":"30%")};
     margin-right:${({isHovering})=>(isHovering ? "30px":"0")}
   }
@@ -150,7 +151,7 @@ export const SideBarLink = styled(LinkRouter)`
   margin-top: 15px;
 
   padding: 10px 10px 20px 20px;
-  @media screen and (min-width: 921px) {
+  @media screen and (min-width:1200px) {
     display: flex;
     height: 50px;
     align-items: center;
@@ -190,7 +191,7 @@ export const SideText = styled.p`
   margin-left: 20px;
   width: 80%;
   padding-top: 2px;
-  @media screen and (min-width: 921px) {
+  @media screen and (min-width:1200px) {
   transition: 50ms ease-in-out all;
   visibility: ${({isHovering})=>(isHovering?"visible":"hidden")};
   }

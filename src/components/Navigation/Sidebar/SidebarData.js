@@ -12,12 +12,12 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 export const SideBarData = [
   {
     title: "Dashboard(business)",
-    path: "/dashboard",
+    path: "/",
     icon: <FaChartPie />,
   },
   {
     title: "Profile",
-    path: "/profile",
+    path: "/shudy",
     icon: <FaMoneyBill />,
   },
 
