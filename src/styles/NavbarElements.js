@@ -1,29 +1,32 @@
 import styled from "styled-components";
 
 export const Nav = styled.nav`
-  width: 100%;
-  height: 80px;
+  min-width:100% ;
+  height: 70px;
+  margin-top: -70px;
   display: flex;
-  font-size: 1rem;
+  margin-left:auto;
+  margin-right: auto;
   top: 0;
-  margin-right: 0 auto;
+  background: white;
+  font-size: 1rem;
   justify-content: center;
   align-items: center;
   border-bottom: lightgrey 1px solid;
-  position: relative;
-  top: 0;
-  z-index: 1;
-  box-shadow: 0px 0px 8px grey;
-  @media screen and (min-width: 921px) {
+  position: sticky ;
+  z-index: 10;
+  box-shadow: 0px 0px 4px #beb4d9;
+  @media screen and (min-width: 1540px) {
     transition: 0.2s all ease;
+  
   }
 `;
 export const NavigationContainer = styled.div`
   display: flex;
   justify-content: space-between;
   height: 80px;
-  align-items: center;
   width: 100%;
+  align-items: center;
   padding: 0px 24px;
   /* max-width: 1920px; */
  
@@ -70,7 +73,6 @@ align-items: center;
 width: 40px;
 height: 40px;
 border-radius: 50px;
-background-color: red;
 
 
 `;

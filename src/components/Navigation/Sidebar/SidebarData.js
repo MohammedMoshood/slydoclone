@@ -17,7 +17,7 @@ export const SideBarData = [
   },
   {
     title: "Profile",
-    path: "/shudy",
+    path: "/profile",
     icon: <FaMoneyBill />,
   },
 
@@ -29,76 +29,87 @@ export const SideBarData = [
 
   {
     title: "Products/Services",
-    path: "/services",
+    path: "",
     icon: <FaCreditCard />,
-    iconClosed: <MdKeyboardArrowDown  />,
+    iconClosed: <MdKeyboardArrowDown />,
     iconOpened: <MdKeyboardArrowUp />,
 
     subSidebar: [
       {
+        title: "Services",
+        path: "/services",
+      },
+      {
+        title: "Products",
+        path: "/services/products",
+      },
+      {
         title: "Orders",
-        path: "/blogs/orders",
+        path: "/services/orders",
       },
-      {
-        title: "Emails",
-        path: "/blogs/emails",
-      },
-      {
-        title: "Sms",
-        path: "/blogs/sms",
-      },
-     
     ],
-},
+  },
 
   {
     title: "Contacts",
-    path: "/contacts",
+    path: "",
     icon: <AiOutlineLineChart />,
     iconClosed: <MdKeyboardArrowDown />,
     iconOpened: <MdKeyboardArrowUp />,
     subSidebar: [
       {
-        title: "Orders",
-        path: "/blogs/orders",
+        title: "Contact",
+        path: "/contacts",
       },
       {
-        title: "Emails",
-        path: "/blogs/emails",
+        title: "Contact Requests",
+        path: "/contacts/requests",
       },
       {
-        title: "Sms",
-        path: "/blogs/sms",
-      },]
+        title: "Blocked Contacts",
+        path: "/contacts/blocked",
+      },
+    ],
   },
 
   {
     title: "Payments",
-    path: "/payments",
+    path: "",
     icon: <FaUsers />,
     iconClosed: <MdKeyboardArrowDown />,
     iconOpened: <MdKeyboardArrowUp />,
 
     subSidebar: [
       {
-        title: "Orders",
-        path: "/blogs/orders",
+        title: "Transactions",
+        path: "/payments/transactions",
       },
       {
-        title: "Emails",
-        path: "/blogs/emails",
+        title: "Requests",
+        path: "/payments/requests",
       },
       {
-        title: "Sms",
-        path: "/blogs/sms",
+        title: "Payouts",
+        path: "/payments/payouts",
       },
-     
+      {
+        title: "invoice",
+        path: "/payments/invoice",
+      },
+      {
+        title: "Payment Contract",
+        path: "/payments/contracts",
+      },
+      {
+        title: "Bank Accounts ",
+        path: "/payments/bankaccounts",
+      },
     ],
   },
 
   {
     title: "Blogs",
-    path: "/blogs",
+    path: "",
     icon: <BiEnvelope />,
 
     iconClosed: <MdKeyboardArrowDown />,
@@ -106,42 +117,36 @@ export const SideBarData = [
 
     subSidebar: [
       {
-        title: "Orders",
-        path: "/blogs/orders",
+        title: "Blog Posts",
+        path: "/blogs",
       },
       {
-        title: "Emails",
-        path: "/blogs/emails",
+        title: "Create Blog posts",
+        path: "/blogs/newpost",
       },
-      {
-        title: "Sms",
-        path: "/blogs/sms",
-      },
-     
     ],
   },
 
   {
     title: "Settings",
-    path: "/settings",
+    path: "",
     icon: <BiBarChartSquare />,
     iconClosed: <MdKeyboardArrowDown />,
     iconOpened: <MdKeyboardArrowUp />,
 
     subSidebar: [
       {
-        title: "Orders",
-        path: "/blogs/orders",
+        title: "Team Members",
+        path: "/settings/members",
       },
       {
-        title: "Emails",
-        path: "/blogs/emails",
+        title: "Shipping Options",
+        path: "/settings/shipping",
       },
       {
-        title: "Sms",
-        path: "/blogs/sms",
+        title: "Terms & Conditions",
+        path: "/settings/tsandcs",
       },
-     
     ],
   },
 ];

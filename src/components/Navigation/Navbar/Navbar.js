@@ -12,8 +12,10 @@ import {
   ProfileImage,
  
 } from "../../../styles/NavbarElements";
+import { useNavContext } from "../../../contexts/NavContext";
 
-const Navbar = ({ isOpen , toggle }) => {
+const Navbar = () => {
+  const {isOpen , toggle} = useNavContext();
   return (
     <>
       <Nav>

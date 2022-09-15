@@ -2,8 +2,8 @@ import React from 'react'
 import Infocards from './Infocards/Infocards'
 import LineChart from './Infocards/LineChart'
 import { cardData1 , cardData2 } from './Infocards/infoData'
-import {PageContainer , PageWrapper , ChartContainer, WelcomeText , InfoWrap , TextWrap} from "../../styles/WelcomeElements"
-
+import {ChartContainer, WelcomeText , InfoWrap , TextWrap} from "../../styles/WelcomeElements"
+import {PageContainer , PageWrapper  } from "../../styles/StaticHomeElements"
 const Welcome = () => {
   return (
     <>

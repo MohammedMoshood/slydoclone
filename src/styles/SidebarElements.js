@@ -62,6 +62,14 @@ export const SidebarContainer = styled.aside`
   z-index: 999;
   border-right: #beb4d9 solid 0.1rem;
   transition: 0.4s ease-in-out;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #5d4ef0;
+  }
 
   @media screen and (min-width:1200px) {
     width: ${({ isHovering }) => (isHovering ? "350px" : "70px")};
@@ -72,7 +80,7 @@ export const SidebarContainer = styled.aside`
   }
 `;
 export const Slydo = styled.div`
-  position: fixed;
+  position: absolute;
   top: 0.7rem;
   font-size: 32px;
   color: #5c3cfa;
@@ -196,6 +204,19 @@ export const SideText = styled.p`
   visibility: ${({isHovering})=>(isHovering?"visible":"hidden")};
   }
 `;
+export const ArrowStyle = styled.div`
+margin-left: 10px;
+transform: translateX(80px) translateY(8px);
+
+@media screen and (min-width: 1200px) {
+  transition: 0.15s;
+  transform: translateX(80px);
+  margin-left: 20px;
+  visibility: ${({isHovering})=> isHovering ? "visible": "hidden"} ;
+}
+
+`;
+
 
 export const DropdownLink = styled(LinkRouter)`
   background-color: transparent;
@@ -208,18 +229,21 @@ export const DropdownLink = styled(LinkRouter)`
   width: 100%;
   display: flex;
   list-style: none;
+  transition: 0.5s all ease-in-out;
   &:hover {
     border-left: 5px solid #2e2e2e;
     background: #5c3cfa;
     color: white;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     width: 100%;
     padding-left: 5rem;
+    transition: 0.15s ease-in-out;
   }
 `;
 export const SubSidebarText = styled.span`
   font-weight: 400;
   font-size: 16px;
 `;
+

@@ -1,36 +1,16 @@
 import styled from "styled-components"
 
-export const PageContainer = styled.div`
-height: 1400px;
-width: 100%;
-justify-content: center;
-align-items: center;
-margin: 0 auto;
-background:#e3deff ;
-@media screen and (min-width: 1540px ) {
-    height: 100vh;
-}
-`
-export const PageWrapper = styled.div`
-height:80vh;
-width: 100%;
-justify-content: center;
-display: grid;
-`
 export const TextWrap = styled.div`
 height:10vh;
 align-items: center;
-justify-content: left;
 display: flex;
-width: 90%;
+width: 93%;
 font-weight: 200;
-margin: 0 auto;
-/* background: red; */
+margin: auto;
 `
 export const WelcomeText = styled.h2`
 font-weight: 200;
 display: flex;
-justify-content: center;
 padding-top: 5px;
 `
 export const InfoWrap = styled.div`

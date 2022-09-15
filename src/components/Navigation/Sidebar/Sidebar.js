@@ -13,8 +13,13 @@ import {
 
 } from "../../../styles/SidebarElements";
 import { FaAllergies as SlydoIcon } from "react-icons/fa";
+import { useNavContext } from "../../../contexts/NavContext";
 
-const Sidebar = ({ isOpen, toggle , isHovering , toggleHoverTrue , toggleHoverFalse }) => {
+const Sidebar = () => {
+
+  const { isHovering , isOpen , toggle , toggleHoverTrue , toggleHoverFalse} = useNavContext();
+
+
   return (
     <OverallSide isHovering={isHovering}  onMouseEnter={toggleHoverTrue}  onMouseLeave={!isOpen ? toggleHoverFalse : null} isOpen={isOpen}>
  
@@ -32,8 +37,8 @@ const Sidebar = ({ isOpen, toggle , isHovering , toggleHoverTrue , toggleHoverFa
           <br/>
           <br/>
           <NavigationText  isHovering={isHovering}>NAVIGATION</NavigationText>
-          {SideBarData.map((item, index) => {
-            return <MenuItem isHovering={isHovering} toggle={toggle} item={item} key={index} />;
+          {SideBarData.map((Link, index) => {
+            return <MenuItem item={Link} key={index} isHovering={isHovering} toggle={toggle} />;
           })}
         </SideBarWrapper  >
       </SidebarContainer>
